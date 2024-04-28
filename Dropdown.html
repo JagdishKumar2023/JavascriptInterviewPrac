@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Select Option</title>
+  </head>
+  <body>
+    <select id="mySelect" onchange="handleSelectChange()">
+      <option value="Mern">Mern</option>
+      <option value="Backend">Backend</option>
+      <option value="React developer">React developer</option>
+      <option value="Full stack">Full stack</option>
+    </select>
+
+    <p id="selectedOption"></p>
+
+    <script>
+      function handleSelectChange() {
+        var selectedOption = document.getElementById("mySelect").value;
+        document.getElementById("selectedOption").innerText = selectedOption;
+      }
+    </script>
+  </body>
+</html>

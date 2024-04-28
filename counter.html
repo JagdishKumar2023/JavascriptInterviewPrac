@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counting App</title>
+  </head>
+  <body>
+    <h1>Count: <span id="count">0</span></h1>
+
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+
+    <script>
+      // Function to increment the count
+      function increment() {
+        var countElement = document.getElementById("count");
+        var count = parseInt(countElement.textContent);
+        countElement.textContent = count + 1;
+      }
+
+      // Function to decrement the count
+      function decrement() {
+        var countElement = document.getElementById("count");
+        var count = parseInt(countElement.textContent);
+        countElement.textContent = count - 1;
+      }
+    </script>
+  </body>
+</html>
